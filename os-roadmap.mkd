@@ -31,6 +31,7 @@ layout: false
     - (LS)Dalton and libraries (present and future)
     - Dalton and LSDalton as libraries for other codes?
 - Redistribution terms (do we allow or require to distribute modifications?)
+- What would you like to achieve and what would you like to avoid?
 
 ---
 
