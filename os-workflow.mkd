@@ -139,7 +139,7 @@ template: inverse
 - Code that cannot be released may not be submitted towards master
 - Makes releases trivial (next slide)
 - Make the main development line read-only (nobody can push directly)
-- Never use city/university branches (`tromso` branch and `bratislava` branch, only feature branches)
+- Never use city/university branches (`oslo` branch and `aarhus` branch, only feature branches)
 
 ---
 
