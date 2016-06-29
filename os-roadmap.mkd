@@ -1,0 +1,78 @@
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+
+# Roadmap to open source
+
+## Radovan Bast
+
+Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Code examples: [OSI](http://opensource.org)-approved [MIT license](http://opensource.org/licenses/mit-license.html).
+
+---
+
+layout: false
+
+## Roadmap to open source 1/3
+
+### Intent phase
+
+- Discuss pros and cons
+- Decide (to decide) to go open
+
+### Choose a license
+
+- Standard license
+- Compatibility
+    - Dalton and LSDalton
+    - Dalton and DIRAC
+    - (LS)Dalton and libraries (present and future)
+    - Dalton and LSDalton as libraries for other codes?
+- Redistribution terms (do we allow or require to distribute modifications?)
+
+---
+
+## Roadmap to open source 2/3
+
+### Approval (OS and license)
+
+- Email or snail mail
+- Ideally written signature under a letter that explains what, why, and how
+- Present and past developers who disagree
+  get the chance and time to remove code (document how)
+
+### Development history
+
+- Which branches to open?
+    - Typically at least master and release branch(es)
+- Unreleasable and secret code needs to move out of master
+- Options
+    - Keep history (secret code may be found in the history)
+    - Reset history (spoils git blame and cuts out branches)
+    - Rewrite history (cuts out old and conflicting branches)
+- Where to place the other branches?
+
+---
+
+## Roadmap to open source 3/3
+
+### Repository hosting
+
+- https://gitlab.com
+    - Open core
+
+- https://github.com
+    - High availability
+    - High visibility
+    - Industry standard
+    - Better integrations
+    - Closed source
+
+### New workflow
+
+- Ideally forking-workflow
+- Ideally same workflow for internal and external contributors
+- Document new workflow
+- Adopt new workflow
