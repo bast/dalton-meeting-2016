@@ -20,7 +20,7 @@ layout: false
 ### Intent phase
 
 - Discuss pros and cons
-- Decide (to decide) to go open
+- Decide to (decide to) go open
 
 ### Choose a license
 
@@ -54,6 +54,7 @@ layout: false
     - Reset history (spoils git blame and cuts out branches)
     - Rewrite history (cuts out old and conflicting branches)
 - Where to place the other branches?
+- Dalton: 229 branches (151 not modified in past 2 years)
 
 ---
 
@@ -72,7 +73,7 @@ layout: false
 
 ### New workflow
 
-- Ideally forking-workflow
 - Ideally same workflow for internal and external contributors
+- Ideally forking-workflow
 - Document new workflow
 - Adopt new workflow
