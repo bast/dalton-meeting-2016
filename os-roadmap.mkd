@@ -60,15 +60,14 @@ layout: false
 
 ### Repository hosting
 
-- https://gitlab.com
-    - Open core
-
 - https://github.com
     - High availability
     - High visibility
     - Industry standard
-    - Better integrations
+    - Many integrations
     - Closed source
+- https://gitlab.com
+    - Open core
 
 ### New workflow
 
