@@ -1,0 +1,208 @@
+name: inverse
+layout: true
+class: center, middle, inverse
+
+---
+
+# How open source development works
+
+## Radovan Bast
+
+Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Code examples: [OSI](http://opensource.org)-approved [MIT license](http://opensource.org/licenses/mit-license.html).
+
+---
+
+layout: false
+
+## Open source model
+
+### Often ...
+
+- Large number of contributors
+- Distributed team
+- Contributors are not paid for the contributions
+- Project is not the daytime job
+- No budget for servers
+- Busy people with no time to maintain own servers
+- No profit or non-profit
+
+### Open-source model is optimized for scale and distributed teams
+
+---
+
+## Open source programmers are busy and not millionaires
+
+### Free hosting
+
+- Repository
+- Issues
+- Tarball distribution
+- Website: GitHub pages or GitLab pages or BitBucket pages
+- Documentation: http://readthedocs.org
+- Testing: Travis CI or GitLab CI
+- Code coverage: Coveralls
+
+### Communication
+
+- Mailing list
+- Chat: IRC or Slack
+- Forum: https://www.discourse.org
+- Via issues and @mentions
+
+---
+
+## Traditional centralized workflow
+
+- People who want to make changes need access
+- "Please give me access to the repository and I will contribute my changes."
+- Requires overview and understanding of the entire stack
+- Somebody needs to watch commits
+- Difficult to steer a project
+- **Does not scale with the team size** (scales perhaps to 4 people)
+
+---
+
+## Modern forking workflow
+
+- Nobody can modify code directly
+- Anybody can fork ("copy") the project and make changes to the fork
+- On the fork you do whatever the license allows
+- You do not have to contribute changes back
+- You contribute changes back by filing a pull request or merge request
+- A pull request is a request to merge changes
+- "Please review my changes and if you agree to these changes, merge the pull request at your convenience with a mouse click"
+- Code review is like **peer review** in publishing
+- Code review does not have to be done by a single person
+- Can automatically indicate whether the change merges without conflicts,
+  whether it preserves tests, coverage, and style
+- **Scales to thousands of developers**
+
+---
+
+## Code review
+
+- Peer review for code changes
+- Typically implemented via fork-pull-request workflow
+- Discussion thread
+- Typically in the browser; do not need terminal
+- Coupled with automated testing and code coverage
+- Allows to make sure that code goes in with a clear history, with documentation
+  and tests, and to the right branch
+- Avoids pre-release documentation work and changelog archaeology
+
+---
+
+template: inverse
+
+## Sounds like extra work! Who will do it?
+
+---
+
+## Delegate and decentralize code review
+
+- It is a lot of work to do it properly
+- But already minimal code review effort can have significant effect
+- Delegate and decentralize
+- **If you want to steer the code, you then need to participate in code review**
+- Group leaders must provide students with good standards and must make
+  sure that standards are followed
+- Do not review own code
+- Large projects often follow military structure
+
+---
+
+template: inverse
+
+## Will there be many versions of my code?
+
+---
+
+## Will there be many versions of my code?
+
+- Yes!
+- You can see all forks
+- Linux kernel: 12900 forks
+- Git: 7500 forks
+- CMake: 510 forks
+- Psi4: 75 forks
+
+### In practice it is always clear where the main line development is
+
+---
+
+## One main line
+
+- Typically called master
+- Everything on the main line can in principle be released
+- Code that cannot be released may not be submitted towards master
+- Makes releases trivial (next slide)
+- Make the main development line read-only (nobody can push directly)
+- Never use city/university branches (`tromso` branch and `bratislava` branch, only feature branches)
+
+---
+
+## Release preparation
+
+- The main line is tested, documented, and carries a
+  changelog and up-to-date list of authors (thanks to code review)
+- Website and documentation follow the sources
+- Branch off a release branch, e.g. `stable-2.x`
+- Apply bugfixes and cosmetics to `stable-2.x`, merge them to `master`
+- Once ready, tag the release, e.g. `stable-2.0.0`, and create tarball (mouse click)
+- Done
+- **Release preparation reduces to a decision**, all the work has been done earlier thanks to code review
+- Fork-pull-requests delegate (work), decentralize (power), and delocalize (time) effort
+
+---
+
+## Distribution of code
+
+- Release branch(es) to support patches
+- Releases are tagged
+- Release tarballs created automatically
+- Semantic versioning
+- People can also clone
+
+---
+
+## Patching
+
+- Patching requires that everybody agrees on one main development line
+- Git makes it easy to contribute and distribute patches provided everybody
+  can see the main development line
+- Patches are immediately available
+- Contributed via pull request
+- Semantic versioning
+- Applied to the oldest supported release branch and merged upwards
+- Back-ported using cherry-picking
+
+---
+
+## Updating websites and documentation
+
+### Closed source and own servers
+
+- Often one person with the right permissions needs to run some scripts
+
+### Open source and hosted in the cloud for free
+
+- Everybody can modify via fork-pull-request
+- Accepted pull-request automatically refreshes the website/documentation (hooks)
+
+---
+
+## Lessons to take home
+
+- Do not maintain own servers
+- Use a standard license
+- Document contribution guide
+- Document branching policy
+- Use one main development line
+- Learn Git
+- Make the main development line and release branches read-only (nobody can push directly)
+- Never submit unreleasable or unfinished code to master
+- Always submit code with documentation, tests, and changelog
+- Use code review: best way to learn from each other
+- Engaging with the community will take time
+- Don't worry so much about read access, worry about write access
