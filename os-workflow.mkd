@@ -60,6 +60,7 @@ layout: false
 - Somebody needs to watch commits
 - Difficult to steer a project
 - **Does not scale with the team size** (scales perhaps to 4 people)
+- **Does not work for external contributions**
 
 ---
 
